@@ -1,16 +1,25 @@
 ---
-import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<Header/>
-	<main><h1>PRUEBA CON  MAYUSCULAS</h1></main>
+	<h1>PRUEBA CON  MAYUSCULAS</h1>
 </Layout>
 
 <style>
+@font-face {
+	font-family: 'GetSchwifty';
+	src: url('../../public/fonts/get_schwifty') format('ttf');
+	font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 	h1 {
 		color: white;
 		font-weight: 400;
+	}
+	* {
+		font-family: 'GetSchwifty', sans-serif;
+
 	}
 </style>

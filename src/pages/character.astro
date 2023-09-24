@@ -1,9 +1,16 @@
 ---
 
+import type { Code, Debug } from "astro:components";
+import { useFetch } from "../hooks/useFetch";
 import Layout from "../layouts/Layout.astro";
+import CardList from "../components/CardList.astro";
 
+const result = await useFetch({url: "https://rickandmortyapi.com/api/character"});
 ---
 
 <Layout title="Character">
     <span><h1>Character</h1></span>
+    <article class="container mx-auto px-4 py-8">
+        <CardList data={result.results} />
+    </article>
 </Layout>

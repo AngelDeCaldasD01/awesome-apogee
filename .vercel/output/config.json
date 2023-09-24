@@ -18,6 +18,26 @@
 		{
 			"src": "^\\/$",
 			"dest": "index.astro"
+		},
+		{
+			"src": "^\\/character\\/([^/]+?)\\/?$",
+			"dest": "character/[id].astro"
+		},
+		{
+			"src": "^\\/character\\/?$",
+			"dest": "character.astro"
+		},
+		{
+			"src": "^\\/location\\/?$",
+			"dest": "location.astro"
+		},
+		{
+			"src": "^\\/episode\\/?$",
+			"dest": "episode.astro"
+		},
+		{
+			"src": "^\\/home\\/?$",
+			"dest": "home.astro"
 		}
 	]
 }
