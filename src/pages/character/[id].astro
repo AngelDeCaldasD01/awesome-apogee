@@ -1,9 +1,17 @@
 ---
+import { useFetch } from "../../hooks/useFetch";
 import Layout from "../../layouts/Layout.astro";
 
 export const prerender = false;
 
 const {id} = Astro.params;
+const result = await useFetch({url: `https://rickandmortyapi.com/api/character/${id}`});
 ---
 
-<Layout title={`Página ${id}`}></Layout>
+<Layout title={`Página ${id}`}>
+    <section>
+        <div class="text-lime-400 text-2xl">{result.name}</div>
+        <div class="text-lime-400 text-2xl">{result.status}</div>
+        <div class="text-lime-400 text-2xl">{result.species}</div>
+    </section>
+</Layout>

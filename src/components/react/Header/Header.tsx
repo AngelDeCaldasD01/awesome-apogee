@@ -8,7 +8,7 @@ export function Header () {
   };
 
   return (
-    <header className="bg-lime-400 p-4 font-sans">
+    <header className="bg-lime-400 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-lime-950 text-2xl font-bold">Mi Sitio</div>
         <nav className="hidden md:flex space-x-4">
