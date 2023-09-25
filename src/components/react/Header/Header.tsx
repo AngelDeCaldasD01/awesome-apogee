@@ -13,9 +13,9 @@ export function Header () {
         <div className="text-lime-950 text-2xl font-bold">Mi Sitio</div>
         <nav className="hidden md:flex space-x-4">
           <a href="/" className="text-lime-950">Home</a>
-          <a href="/character" className="text-lime-950">Character</a>
-          <a href="#" className="text-lime-950">Location</a>
-          <a href="#" className="text-lime-950">Episode</a>
+          <a href="/character" className="text-lime-950">Characters</a>
+          <a href="#" className="text-lime-950">Locations</a>
+          <a href="#" className="text-lime-950">Episodes</a>
         </nav>
         <div className="md:hidden">
           <button

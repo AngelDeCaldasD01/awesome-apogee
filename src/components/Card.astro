@@ -13,7 +13,7 @@ const { id, name, image, species, gender, url } = Astro.props;
 ---
 
 <a href={`/character/${id}`} class="bg-white rounded-lg shadow-lg p-4 transition-transform transform hover:scale-105">
-    <img src={image} alt={name} class="w-full h-40 object-cover" />
+    <img src={image} alt={name} class="w-full h-40 object-cover" loading="lazy"/>
 
     <div class="p-4">
         <h2 class="text-xl font-semibold">{name}</h2>

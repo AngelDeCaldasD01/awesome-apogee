@@ -1,6 +1,8 @@
 ---
 import { ViewTransitions, fade } from 'astro:transitions';
 import { Header } from '../components/react/Header/Header';
+import '@fontsource-variable/montserrat';
+
 interface Props {
 	title: string;
 }
@@ -46,5 +48,9 @@ const { title } = Astro.props;
 		font-family: 'GetSchwifty';
 		background-size: 224px;
 		color-scheme: dark light;
+	}
+
+	a {
+		font-family: 'Montserrat Variable', sans-serif;
 	}
 </style>
