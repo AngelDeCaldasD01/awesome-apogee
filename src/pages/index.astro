@@ -1,25 +1,34 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import imageHome from "./../assets/images/rickyMorty.webp";
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1>PRUEBA CON  MAYUSCULAS</h1>
+<Layout title="Rick y Morty Wiki">
+	<div class="glass p-4">
+		<h1>Inicio</h1>
+		<Image src={imageHome} alt="Home image"/>
+		<p>
+			¡Bienvenido a la Wiki de Rick y Morty!
+		</p><br/>
+		<p>
+			Explora el fascinante y alocado universo de la serie animada más extravagante y llena de aventuras de la televisión. Aquí encontrarás una inmensa colección de información sobre los personajes, planetas, dimensiones alternas y todos los detalles que conforman este mundo intergaláctico.
+		</p><br/>
+		<p>
+			Sumérgete en las historias de Rick Sanchez, el científico alcohólico y genio loco, y su nieto Morty Smith, mientras viajan a través del multiverso en emocionantes y peligrosas misiones. Descubre los secretos detrás de la Agencia para la Protección de Portales Interdimensionales, conoce a los seres extraterrestres más extraños y explora las teorías más descabelladas de los fanáticos.
+		</p><br/>
+		<p>
+			¿Listo para embarcarte en una aventura interdimensional? Navega a través de nuestra Wiki y descubre todo lo que siempre quisiste saber sobre Rick y Morty. Desde datos curiosos hasta análisis profundos de episodios, ¡aquí encontrarás todo lo que necesitas para convertirte en un verdadero experto en el universo de Rick y Morty!
+		</p>
+	</div>
 </Layout>
 
 <style>
-@font-face {
-	font-family: 'GetSchwifty';
-	src: url('../../public/fonts/get_schwifty') format('ttf');
-	font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-	h1 {
-		color: white;
-		font-weight: 400;
-	}
-	* {
-		font-family: 'GetSchwifty', sans-serif;
-
+	.glass {
+		background: rgba(255, 255, 255, 0.31);
+		border-radius: 4px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
 	}
 </style>

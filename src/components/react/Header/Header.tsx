@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Header.css";
 
 export function Header () {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,14 +9,14 @@ export function Header () {
   };
 
   return (
-    <header className="bg-lime-400 p-4">
+    <header className="bg-teal-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-lime-950 text-2xl font-bold">Mi Sitio</div>
+        <div className="text-teal-400 text-4xl font-bold text-stroke font-body">Rick y Morty</div>
         <nav className="hidden md:flex space-x-4">
-          <a href="/" className="text-lime-950">Home</a>
-          <a href="/character" className="text-lime-950">Characters</a>
-          <a href="#" className="text-lime-950">Locations</a>
-          <a href="#" className="text-lime-950">Episodes</a>
+          <a href="/" className="text-lime-550">Home</a>
+          <a href="/character" className="text-lime-550">Characters</a>
+          <a href="#" className="text-lime-550">Locations</a>
+          <a href="#" className="text-lime-550">Episodes</a>
         </nav>
         <div className="md:hidden">
           <button

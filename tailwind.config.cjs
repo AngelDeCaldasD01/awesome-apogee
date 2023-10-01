@@ -5,9 +5,12 @@ module.exports = {
 	theme: {
 		extend: {
 		  fontFamily: {
-			sans: ["GetSchwifty", "sans-serif"],
-			body: ["Montserrat Variable"]
+			body: ["GetSchwifty", "sans-serif"],
+			sans: ["Montserrat Variable"] //letra por defecto de tailwind
 		  },
+		  colors: {
+			'lime-550': "#98c637",
+		  }
 		},
 	  },
 	plugins: [],
